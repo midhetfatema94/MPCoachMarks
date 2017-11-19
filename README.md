@@ -91,6 +91,18 @@ coachMarksView.enableContinueLabel = NO;
 [coachMarksView start];
 ```
 
+You can add attributed text in your label like so:
+
+```NSArray *coachMarks = @[
+                            @{
+                                @"attributedCaption": @"You can put marks over images",
+                                @"isAttributed": [NSNumber numberWithBool:YES]
+                            },
+                           ];
+```
+For the attributed text to be adapted, isAttributed property is necessary.
+
+
 Example of how to show the coach marks to your user only once (assumes `coachMarksView` is instantiated in `viewDidLoad`):
 
 ```objective-c
