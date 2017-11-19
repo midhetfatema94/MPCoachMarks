@@ -93,12 +93,13 @@ coachMarksView.enableContinueLabel = NO;
 
 You can add attributed text in your label like so:
 
-```NSArray *coachMarks = @[
-                            @{
-                                @"attributedCaption": @"You can put marks over images",
-                                @"isAttributed": [NSNumber numberWithBool:YES]
-                            },
-                           ];
+```objective-c
+NSArray *coachMarks = @[
+			@{
+			  @"attributedCaption": @"You can put marks over images",
+			  @"isAttributed": [NSNumber numberWithBool:YES]
+			 },
+		      ];
 ```
 For the attributed text to be adapted, isAttributed property is necessary.
 
